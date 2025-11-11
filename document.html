@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents de Soutien - Terminales D&A4 Dourbali</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #4A00E0;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .nav {
+            background: #6c5ce7;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .content {
+            padding: 25px;
+        }
+        
+        .subject-section {
+            margin-bottom: 30px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        
+        .subject-title {
+            color: #4A00E0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4A00E0;
+        }
+        
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .document-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .doc-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .doc-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .doc-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #128C7E;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #4A00E0;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 12px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        @media (max-width: 600px) {
+            .content {
+                padding: 15px;
+            }
+            
+            .documents-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Documents de Soutien</h1>
+            <p>Terminales D & A4 - Dourbali</p>
+        </div>
+        
+        <div class="nav">
+            <a href="https://yves19011999.github.io/DOURBALI-BAC-2025-/">Accueil</a>
+            <a href="#maths">Mathématiques</a>
+            <a href="#physique">Physique-Chimie</a>
+            <a href="#svt">SVT</a>
+            <a href="#francais">Français</a>
+        </div>
+        
+        <div class="content">
+            <!-- MATHÉMATIQUES -->
+            <div class="subject-section" id="maths">
+                <h2 class="subject-title">🧮 Mathématiques</h2>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <span class="doc-icon">📄</span>
+                        <div class="doc-title">Fiche - Suites Numériques</div>
+                        <div class="doc-description">Formules et méthodes pour les suites</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">📊</span>
+                        <div class="doc-title">Exercices - Dérivation</div>
+                        <div class="doc-description">20 exercices avec corrections</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">🎯</span>
+                        <div class="doc-title">Annales Bac</div>
+                        <div class="doc-description">Sujets des années précédentes</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">📝</span>
+                        <div class="doc-title">Formulaire Complet</div>
+                        <div class="doc-description">Toutes les formules à connaître</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PHYSIQUE-CHIMIE -->
+            <div class="subject-section" id="physique">
+                <h2 class="subject-title">⚛️ Physique-Chimie</h2>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <span class="doc-icon">🔬</span>
+                        <div class="doc-title">Mécanique - Fiches</div>
+                        <div class="doc-description">Lois de Newton et applications</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">⚡</span>
+                        <div class="doc-title">Électricité</div>
+                        <div class="doc-description">Circuits et lois fondamentales</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">🧪</span>
+                        <div class="doc-title">Chimie Organique</div>
+                        <div class="doc-description">Réactions et mécanismes</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SVT -->
+            <div class="subject-section" id="svt">
+                <h2 class="subject-title">🌱 Sciences de la Vie et de la Terre</h2>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <span class="doc-icon">🧬</span>
+                        <div class="doc-title">Génétique</div>
+                        <div class="doc-description">Mendel, ADN, génétique moléculaire</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">🌍</span>
+                        <div class="doc-title">Géologie</div>
+                        <div class="doc-description">Tectonique des plaques</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">🔍</span>
+                        <div class="doc-title">Méthodologie</div>
+                        <div class="doc-description">Analyser un document scientifique</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FRANÇAIS -->
+            <div class="subject-section" id="francais">
+                <h2 class="subject-title">📖 Français & Philosophie</h2>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <span class="doc-icon">✍️</span>
+                        <div class="doc-title">Méthode Dissertation</div>
+                        <div class="doc-description">Structure et argumentation</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">📚</span>
+                        <div class="doc-title">Fiches Lectures</div>
+                        <div class="doc-description">Analyses des œuvres au programme</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <span class="doc-icon">💭</span>
+                        <div class="doc-title">Culture Générale</div>
+                        <div class="doc-description">Concepts philosophiques clés</div>
+                        <a href="#" class="download-btn">Télécharger</a>
+                    </div>
+                </div>
+            </div>
+            
+            <center>
+                <a href="https://yves19011999.github.io/DOURBALI-BAC-2025-/" class="back-btn">
+                    ← Retour à l'accueil
+                </a>
+            </center>
+        </div>
+        
+        <div class="footer">
+            <p>Documents de soutien scolaire - Terminales D & A4 Dourbali</p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll pour la navigation
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
