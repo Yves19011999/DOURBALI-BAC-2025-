@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soutien Scolaire Terminales D&A4 - Dourbali</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e5799 0%, #207cca 51%, #2989d8 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #4A00E0, #8E2DE2);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .teacher-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #FFD700;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .teacher-intro {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid #4A00E0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .teacher-avatar {
+            width: 80px;
+            height: 80px;
+            background: #4A00E0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+        
+        .teacher-message h2 {
+            color: #4A00E0;
+            margin-bottom: 10px;
+        }
+        
+        .support-plan {
+            background: #f0f7ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 5px solid #25D366;
+        }
+        
+        .support-plan h2 {
+            color: #128C7E;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .plan-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .plan-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .plan-item h3 {
+            color: #4A00E0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .resources {
+            background: #fff9e6;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .resources h2 {
+            color: #e6a700;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .resource-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .resource-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .resource-item i {
+            font-size: 24px;
+            color: #e6a700;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .join-section {
+            text-align: center;
+            padding: 20px 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .join-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #25D366, #128C7E);
+            color: white;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            margin: 10px 0;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .join-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 14px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .teacher-intro {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="teacher-badge">Enseignant</div>
+            <h1>Groupe de Soutien Scolaire</h1>
+            <p>Terminales D & A4 - Dourbali | Bac 2025</p>
+        </div>
+        
+        <div class="content">
+            <div class="teacher-intro">
+                <div class="teacher-avatar">👨‍🏫</div>
+                <div class="teacher-message">
+                    <h2>Message de l'Enseignant</h2>
+                    <p>En tant qu'enseignant, je m'engage à vous accompagner vers la réussite au Baccalauréat 2025. Ce groupe est un espace d'échange où je partagerai des ressources, exercices et conseils pour vous aider à exceller dans vos études.</p>
+                </div>
+            </div>
+            
+            <div class="support-plan">
+                <h2>Mon Plan d'Accompagnement</h2>
+                <p>Je mets en place un programme de soutien complet pour vous préparer efficacement aux épreuves du Bac.</p>
+                
+                <div class="plan-details">
+                    <div class="plan-item">
+                        <h3>📚 Séances de Révision</h3>
+                        <p>Exercices ciblés et corrigés détaillés pour chaque chapitre au programme.</p>
+                    </div>
+                    <div class="plan-item">
+                        <h3>🎯 Conseils Méthodologiques</h3>
+                        <p>Techniques pour optimiser votre temps et améliorer vos résultats.</p>
+                    </div>
+                    <div class="plan-item">
+                        <h3>💬 Support Personnalisé</h3>
+                        <p>Réponses à vos questions et accompagnement individualisé.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resources">
+                <h2>Ressources Pédagogiques</h2>
+                <p>Je mettrai à votre disposition divers supports pour faciliter votre apprentissage.</p>
+                
+                <div class="resource-list">
+                    <div class="resource-item">
+                        <i>📄</i>
+                        <h3>Fiches de Révision</h3>
+                        <p>Résumés de cours et formules importantes</p>
+                    </div>
+                    <div class="resource-item">
+                        <i>✏️</i>
+                        <h3>Exercices Types</h3>
+                        <p>Sujets similaires à l'examen avec corrections</p>
+                    </div>
+                    <div class="resource-item">
+                        <i>🎥</i>
+                        <h3>Vidéos Explicatives</h3>
+                        <p>Explications détaillées des concepts difficiles</p>
+                    </div>
+                    <div class="resource-item">
+                        <i>📊</i>
+                        <h3>Annales Corrigées</h3>
+                        <p>Anciens sujets de Bac avec méthodes de résolution</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="join-section">
+                <h2>Rejoindre le Groupe de Soutien</h2>
+                <p>Cliquez sur le bouton ci-dessous pour accéder à notre espace d'entraide sur WhatsApp :</p>
+                <button class="join-btn" onclick="joinGroup()">
+                    💬 Rejoindre le groupe
+                </button>
+                <p><small>Vous serez redirigé vers WhatsApp pour confirmer votre participation</small></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Groupe de soutien scolaire - Encadré par un enseignant - Terminales D & A4 Dourbali © 2024</p>
+        </div>
+    </div>
+
+    <script>
+        function joinGroup() {
+            // REMPLACEZ CE LIEN PAR VOTRE VRAI LIEN WHATSAPP
+            const whatsappLink = 'https://chat.whatsapp.com/VOTRELIENICI';
+            window.open(whatsappLink, '_blank');
+        }
+        
+        console.log('Page de soutien scolaire chargée - Dourbali Terminales D&A4');
+    </script>
+</body>
+</html>
